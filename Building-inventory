@@ -1,1 +1,14 @@
+Ensure that your public SSH key is added to the authorized_keys file on each target host.
+1. run ssh-keygen on ansible server
+2. copy public key and paste every target servers (cd /root/.ssh; vi authorized_keys)
+3. test connection --> ssh <ipaddress>
 
+4. go to ansible server --> 
+cd /ansible/ansible_quickstart
+vi inventory.ini
+
+[myhosts]
+xxx.xxx.xxx.xxx
+
+run command --> ansible-inventory -i inventory.ini --list (to validate)
+ansible myhosts -m ping -i inventory.ini (to validate connection)
