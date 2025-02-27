@@ -1,2 +1,14 @@
+#### Pre-requisites
 yum install python
 yum install python3-pip
+
+cd /root
+ssh-keygen
+cat /root/.ssh/id_rsa.pub
+
+#### install ansible
+pip install ansible
+cd /
+mkdir ansible
+mkdir /ansible/ansible_quickstart
+cd ansible_quickstart
