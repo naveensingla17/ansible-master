@@ -1,0 +1,139 @@
+[root@master ~]# yum install ansible* -y
+Amazon Linux 2023 Kernel Livepatch repository                                                                                                                                     141 kB/s |  17 kB     00:00    
+Dependencies resolved.
+==================================================================================================================================================================================================================
+ Package                                                   Architecture                             Version                                                   Repository                                     Size
+==================================================================================================================================================================================================================
+Installing:
+ ansible                                                   noarch                                   8.3.0-1.amzn2023.0.1                                      amazonlinux                                    32 M
+ ansible-core                                              x86_64                                   2.15.3-1.amzn2023.0.11                                    amazonlinux                                   2.5 M
+ ansible-packaging                                         noarch                                   1-11.amzn2023.0.1                                         amazonlinux                                    14 k
+ ansible-packaging-tests                                   noarch                                   1-11.amzn2023.0.1                                         amazonlinux                                   9.7 k
+ ansible-srpm-macros                                       noarch                                   1-11.amzn2023.0.1                                         amazonlinux                                    22 k
+Installing dependencies:
+ ansible-test                                              x86_64                                   2.15.3-1.amzn2023.0.11                                    amazonlinux                                   704 k
+ git-core                                                  x86_64                                   2.47.1-1.amzn2023.0.3                                     amazonlinux                                   4.5 M
+ python3-apipkg                                            noarch                                   1.5-12.amzn2023.0.2                                       amazonlinux                                    19 k
+ python3-execnet                                           noarch                                   1.7.1-5.amzn2023.0.2                                      amazonlinux                                   333 k
+ python3-iniconfig                                         noarch                                   1.1.1-2.amzn2023.0.2                                      amazonlinux                                    17 k
+ python3-packaging                                         noarch                                   21.3-2.amzn2023.0.2                                       amazonlinux                                    72 k
+ python3-pluggy                                            noarch                                   0.13.1-3.amzn2023.0.2                                     amazonlinux                                    38 k
+ python3-py                                                noarch                                   1.10.0-2.amzn2023.0.2                                     amazonlinux                                   428 k
+ python3-pyparsing                                         noarch                                   2.4.7-6.amzn2023.0.2                                      amazonlinux                                   152 k
+ python3-pytest                                            noarch                                   6.2.2-1.amzn2023.0.3                                      amazonlinux                                   1.5 M
+ python3-pytest-forked                                     noarch                                   1.3.0-2.amzn2023.0.2                                      amazonlinux                                    17 k
+ python3-pytest-mock                                       noarch                                   3.5.1-2.amzn2023.0.2                                      amazonlinux                                    32 k
+ python3-pytest-xdist                                      noarch                                   2.2.0-2.amzn2023.0.2                                      amazonlinux                                    69 k
+ python3-toml                                              noarch                                   0.10.2-2.amzn2023.0.2                                     amazonlinux                                    39 k
+ sshpass                                                   x86_64                                   1.09-6.amzn2023.0.1                                       amazonlinux                                    28 k
+
+Transaction Summary
+==================================================================================================================================================================================================================
+Install  20 Packages
+
+Total download size: 43 M
+Installed size: 573 M
+Downloading Packages:
+(1/20): ansible-packaging-1-11.amzn2023.0.1.noarch.rpm                                                                                                                            123 kB/s |  14 kB     00:00    
+(2/20): ansible-core-2.15.3-1.amzn2023.0.11.x86_64.rpm                                                                                                                             17 MB/s | 2.5 MB     00:00    
+(3/20): ansible-packaging-tests-1-11.amzn2023.0.1.noarch.rpm                                                                                                                      250 kB/s | 9.7 kB     00:00    
+(4/20): ansible-srpm-macros-1-11.amzn2023.0.1.noarch.rpm                                                                                                                          1.0 MB/s |  22 kB     00:00    
+(5/20): ansible-test-2.15.3-1.amzn2023.0.11.x86_64.rpm                                                                                                                             10 MB/s | 704 kB     00:00    
+(6/20): python3-apipkg-1.5-12.amzn2023.0.2.noarch.rpm                                                                                                                             496 kB/s |  19 kB     00:00    
+(7/20): git-core-2.47.1-1.amzn2023.0.3.x86_64.rpm                                                                                                                                  31 MB/s | 4.5 MB     00:00    
+(8/20): python3-execnet-1.7.1-5.amzn2023.0.2.noarch.rpm                                                                                                                           4.8 MB/s | 333 kB     00:00    
+(9/20): python3-iniconfig-1.1.1-2.amzn2023.0.2.noarch.rpm                                                                                                                         842 kB/s |  17 kB     00:00    
+(10/20): python3-packaging-21.3-2.amzn2023.0.2.noarch.rpm                                                                                                                         2.2 MB/s |  72 kB     00:00    
+(11/20): python3-pluggy-0.13.1-3.amzn2023.0.2.noarch.rpm                                                                                                                          789 kB/s |  38 kB     00:00    
+(12/20): python3-py-1.10.0-2.amzn2023.0.2.noarch.rpm                                                                                                                              8.6 MB/s | 428 kB     00:00    
+(13/20): python3-pyparsing-2.4.7-6.amzn2023.0.2.noarch.rpm                                                                                                                        5.2 MB/s | 152 kB     00:00    
+(14/20): python3-pytest-forked-1.3.0-2.amzn2023.0.2.noarch.rpm                                                                                                                    645 kB/s |  17 kB     00:00    
+(15/20): python3-pytest-6.2.2-1.amzn2023.0.3.noarch.rpm                                                                                                                            20 MB/s | 1.5 MB     00:00    
+(16/20): python3-pytest-mock-3.5.1-2.amzn2023.0.2.noarch.rpm                                                                                                                      709 kB/s |  32 kB     00:00    
+(17/20): ansible-8.3.0-1.amzn2023.0.1.noarch.rpm                                                                                                                                   50 MB/s |  32 MB     00:00    
+(18/20): python3-pytest-xdist-2.2.0-2.amzn2023.0.2.noarch.rpm                                                                                                                     444 kB/s |  69 kB     00:00    
+(19/20): python3-toml-0.10.2-2.amzn2023.0.2.noarch.rpm                                                                                                                            251 kB/s |  39 kB     00:00    
+(20/20): sshpass-1.09-6.amzn2023.0.1.x86_64.rpm                                                                                                                                   879 kB/s |  28 kB     00:00    
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Total                                                                                                                                                                              60 MB/s |  43 MB     00:00     
+Running transaction check
+Transaction check succeeded.
+Running transaction test
+Transaction test succeeded.
+Running transaction
+  Preparing        :                                                                                                                                                                                          1/1 
+  Installing       : python3-py-1.10.0-2.amzn2023.0.2.noarch                                                                                                                                                 1/20 
+  Installing       : sshpass-1.09-6.amzn2023.0.1.x86_64                                                                                                                                                      2/20 
+  Installing       : python3-toml-0.10.2-2.amzn2023.0.2.noarch                                                                                                                                               3/20 
+  Installing       : python3-pyparsing-2.4.7-6.amzn2023.0.2.noarch                                                                                                                                           4/20 
+  Installing       : python3-packaging-21.3-2.amzn2023.0.2.noarch                                                                                                                                            5/20 
+  Installing       : python3-pluggy-0.13.1-3.amzn2023.0.2.noarch                                                                                                                                             6/20 
+  Installing       : python3-iniconfig-1.1.1-2.amzn2023.0.2.noarch                                                                                                                                           7/20 
+  Installing       : python3-pytest-6.2.2-1.amzn2023.0.3.noarch                                                                                                                                              8/20 
+  Installing       : python3-pytest-forked-1.3.0-2.amzn2023.0.2.noarch                                                                                                                                       9/20 
+  Installing       : python3-pytest-mock-3.5.1-2.amzn2023.0.2.noarch                                                                                                                                        10/20 
+  Installing       : python3-apipkg-1.5-12.amzn2023.0.2.noarch                                                                                                                                              11/20 
+  Installing       : python3-execnet-1.7.1-5.amzn2023.0.2.noarch                                                                                                                                            12/20 
+  Installing       : python3-pytest-xdist-2.2.0-2.amzn2023.0.2.noarch                                                                                                                                       13/20 
+  Installing       : git-core-2.47.1-1.amzn2023.0.3.x86_64                                                                                                                                                  14/20 
+  Installing       : ansible-core-2.15.3-1.amzn2023.0.11.x86_64                                                                                                                                             15/20 
+  Installing       : ansible-test-2.15.3-1.amzn2023.0.11.x86_64                                                                                                                                             16/20 
+  Installing       : ansible-srpm-macros-1-11.amzn2023.0.1.noarch                                                                                                                                           17/20 
+  Installing       : ansible-packaging-1-11.amzn2023.0.1.noarch                                                                                                                                             18/20 
+  Installing       : ansible-packaging-tests-1-11.amzn2023.0.1.noarch                                                                                                                                       19/20 
+  Installing       : ansible-8.3.0-1.amzn2023.0.1.noarch                                                                                                                                                    20/20 
+  Running scriptlet: ansible-8.3.0-1.amzn2023.0.1.noarch                                                                                                                                                    20/20 
+  Verifying        : ansible-8.3.0-1.amzn2023.0.1.noarch                                                                                                                                                     1/20 
+  Verifying        : ansible-core-2.15.3-1.amzn2023.0.11.x86_64                                                                                                                                              2/20 
+  Verifying        : ansible-packaging-1-11.amzn2023.0.1.noarch                                                                                                                                              3/20 
+  Verifying        : ansible-packaging-tests-1-11.amzn2023.0.1.noarch                                                                                                                                        4/20 
+  Verifying        : ansible-srpm-macros-1-11.amzn2023.0.1.noarch                                                                                                                                            5/20 
+  Verifying        : ansible-test-2.15.3-1.amzn2023.0.11.x86_64                                                                                                                                              6/20 
+  Verifying        : git-core-2.47.1-1.amzn2023.0.3.x86_64                                                                                                                                                   7/20 
+  Verifying        : python3-apipkg-1.5-12.amzn2023.0.2.noarch                                                                                                                                               8/20 
+  Verifying        : python3-execnet-1.7.1-5.amzn2023.0.2.noarch                                                                                                                                             9/20 
+  Verifying        : python3-iniconfig-1.1.1-2.amzn2023.0.2.noarch                                                                                                                                          10/20 
+  Verifying        : python3-packaging-21.3-2.amzn2023.0.2.noarch                                                                                                                                           11/20 
+  Verifying        : python3-pluggy-0.13.1-3.amzn2023.0.2.noarch                                                                                                                                            12/20 
+  Verifying        : python3-py-1.10.0-2.amzn2023.0.2.noarch                                                                                                                                                13/20 
+  Verifying        : python3-pyparsing-2.4.7-6.amzn2023.0.2.noarch                                                                                                                                          14/20 
+  Verifying        : python3-pytest-6.2.2-1.amzn2023.0.3.noarch                                                                                                                                             15/20 
+  Verifying        : python3-pytest-forked-1.3.0-2.amzn2023.0.2.noarch                                                                                                                                      16/20 
+  Verifying        : python3-pytest-mock-3.5.1-2.amzn2023.0.2.noarch                                                                                                                                        17/20 
+  Verifying        : python3-pytest-xdist-2.2.0-2.amzn2023.0.2.noarch                                                                                                                                       18/20 
+  Verifying        : python3-toml-0.10.2-2.amzn2023.0.2.noarch                                                                                                                                              19/20 
+  Verifying        : sshpass-1.09-6.amzn2023.0.1.x86_64                                                                                                                                                     20/20 
+==================================================================================================================================================================================================================
+WARNING:
+  A newer release of "Amazon Linux" is available.
+
+  Available Versions:
+
+  Version 2023.7.20250623:
+    Run the following command to upgrade to 2023.7.20250623:
+
+      dnf upgrade --releasever=2023.7.20250623
+
+    Release notes:
+     https://docs.aws.amazon.com/linux/al2023/release-notes/relnotes-2023.7.20250623.html
+
+==================================================================================================================================================================================================================
+
+Installed:
+  ansible-8.3.0-1.amzn2023.0.1.noarch                 ansible-core-2.15.3-1.amzn2023.0.11.x86_64           ansible-packaging-1-11.amzn2023.0.1.noarch       ansible-packaging-tests-1-11.amzn2023.0.1.noarch     
+  ansible-srpm-macros-1-11.amzn2023.0.1.noarch        ansible-test-2.15.3-1.amzn2023.0.11.x86_64           git-core-2.47.1-1.amzn2023.0.3.x86_64            python3-apipkg-1.5-12.amzn2023.0.2.noarch            
+  python3-execnet-1.7.1-5.amzn2023.0.2.noarch         python3-iniconfig-1.1.1-2.amzn2023.0.2.noarch        python3-packaging-21.3-2.amzn2023.0.2.noarch     python3-pluggy-0.13.1-3.amzn2023.0.2.noarch          
+  python3-py-1.10.0-2.amzn2023.0.2.noarch             python3-pyparsing-2.4.7-6.amzn2023.0.2.noarch        python3-pytest-6.2.2-1.amzn2023.0.3.noarch       python3-pytest-forked-1.3.0-2.amzn2023.0.2.noarch    
+  python3-pytest-mock-3.5.1-2.amzn2023.0.2.noarch     python3-pytest-xdist-2.2.0-2.amzn2023.0.2.noarch     python3-toml-0.10.2-2.amzn2023.0.2.noarch        sshpass-1.09-6.amzn2023.0.1.x86_64                   
+
+Complete!
+[root@master ~]# ansible --version
+ansible [core 2.15.3]
+  config file = None
+  configured module search path = ['/root/.ansible/plugins/modules', '/usr/share/ansible/plugins/modules']
+  ansible python module location = /usr/lib/python3.9/site-packages/ansible
+  ansible collection location = /root/.ansible/collections:/usr/share/ansible/collections
+  executable location = /usr/bin/ansible
+  python version = 3.9.22 (main, Apr 29 2025, 00:00:00) [GCC 11.5.0 20240719 (Red Hat 11.5.0-5)] (/usr/bin/python3.9)
+  jinja version = 3.1.4
+  libyaml = True
