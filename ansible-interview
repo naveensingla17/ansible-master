@@ -1,0 +1,14 @@
+	1. How to managed nodes connected, how do they resolve DNS ?
+	
+	2. Difference between in config file and inventory file
+	
+	3. How do you validate inventory file ?
+	ansible-inventory -i inventory.ini --list
+	
+	4. How do you validate host connection ?
+	ansible myhosts -m ping -i inventory.ini
+	
+	5. Where do you define variables, inventory or yaml file
+	
+	6. Have you used host_vars and group_vars ?
+	
