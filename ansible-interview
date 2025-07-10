@@ -1,6 +1,7 @@
-	1. How to managed nodes connected, how do they resolve DNS ?
+==> Beginner Level
+	1. What is the default location of the Ansible hosts file?
 	
-	2. Difference between in config file and inventory file
+	2. Difference between in config file and inventory file or What is the use of ansible.cfg file?
 	
 	3. How do you validate inventory file ?
 	ansible-inventory -i inventory.ini --list
@@ -10,5 +11,53 @@
 	
 	5. Where do you define variables, inventory or yaml file
 	
-	6. Have you used host_vars and group_vars ?
+	6. How to managed nodes connected, how do they resolve DNS ?
+	
+	7. What is YAML and why is it used in Ansible?
+	
+	8. Can you run Ansible without root privileges?
+	
+	9. What is the difference between a playbook and an ad-hoc command?
+
+==> Intermediate Level
+	1. What are Ansible facts and how are they collected ?
+	
+	2. Explain the structure of an Ansible playbook.
+	
+	3. What is a role in Ansible?
+	
+	4. How do you include or import playbooks or tasks?
+	
+	5. What is the difference between include and import in Ansible?
+	
+	6. What are handlers in Ansible or how do you capture errors in Ansible?
+	
+	7. What is the difference in host_vars and group_vars ?
+	
+	8. How do you use when conditionals in Ansible?
+
+==> Intermediate Level
+	1. Explain Ansible Vault. How do you use it?
+	
+	2. How do you manage secrets in Ansible?
+	
+	3. What are custom modules and how do you create one in Ansible?
+	
+	4. How can you optimize playbook execution for a large number of hosts?
+	
+	5. How do you handle errors in Ansible? (e.g., ignore_errors, failed_when)
+	
+	6. How can you perform rolling updates using Ansible?
+
+==> Real-World / Scenario-Based Questions
+	1. How would you deploy a web server using Ansible?
+	
+	2. How do you ensure only specific hosts in a group run a certain task?
+	
+	3. You need to install a package only if it's not installed. How would you do that?
+	
+	4. How do you test your Ansible playbooks before running them on production?
+	
+	5. How do you manage different environments (dev/staging/prod) in Ansible?
+
 	
