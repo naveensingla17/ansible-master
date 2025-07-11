@@ -19,6 +19,12 @@
 	
 	9. What is the difference between a playbook and an ad-hoc command?
 
+	10. Ansible feature ?
+		. Agentless
+		. Mass deployment
+		. Migration and testing to prod environment
+		. Revert back to previous version (Rolling update) - In case application failure
+
 ==> Intermediate Level
 	1. What are Ansible facts and how are they collected ?
 	
