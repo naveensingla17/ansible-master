@@ -1,1 +1,8 @@
+Ansible - CMT (Configuration Management Tool)
 
+CMT:
+  Ansible (*)
+  Chef
+  Puppet
+
+Master server (control node) --> remote server
