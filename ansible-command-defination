@@ -5,7 +5,7 @@ CMT:
   Chef
   Puppet
 
-Master server (control node) --> remote server
+Master server (control node) --> remote server (Managed node)
 
 Playbook = Task
 
