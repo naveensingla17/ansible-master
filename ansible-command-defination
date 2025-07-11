@@ -1,10 +1,10 @@
 Ansible - CMT (Configuration Management Tool)
 
 CMT:
-  Ansible (*) - (yaml)
-  Chef - (Ruby / erlang)
-  Puppet - (Puppet DSL)
-  saltstack - (yaml)
+  Ansible (*) - (yaml) - agentless
+  Chef - (Ruby / erlang) - agent based
+  Puppet - (Puppet DSL) - agent based
+  saltstack - (yaml) - agent based
 
 Master server (control node) --> remote server (Managed node)
 
