@@ -6,3 +6,9 @@ CMT:
   Puppet
 
 Master server (control node) --> remote server
+
+Playbook = Task
+
+Inventory = Host List
+
+
