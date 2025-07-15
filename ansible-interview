@@ -25,6 +25,11 @@
 		. Migration and testing to prod environment
 		. Revert back to previous version (Rolling update) - In case application failure
 
+	11. What does ouput in yellow means, red means and green means ?
+	Ans: Yellow - something changed
+	     Green - something added
+	     Red - Error
+
 ==> Intermediate Level
 	1. What are Ansible facts and how are they collected ?
 	
