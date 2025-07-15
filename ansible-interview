@@ -35,6 +35,12 @@
 	13. How can you check if a playbook is idempotent?
 	Ans: run script and check if anything changed or not.
 
+	14. What is latest Ansible name ?
+	Ans: Ansible navigator from redhat
+
+	15. What is the difference between ansible navigator and ansible core ?
+	Ans: Ansible Core is the foundational, open-source automation engine, while Ansible Navigator is a tool built on top of it.
+
 ==> Intermediate Level
 	1. What are Ansible facts and how are they collected ?
 	
