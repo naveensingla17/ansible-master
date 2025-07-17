@@ -57,7 +57,10 @@
 		iii) Provisioning 
 		iv) Continues Delivery
 
-	18. 
+	18. Requirement or pre-requisite
+	Ans:
+	Master node: Unix or Linux + Python3
+	Managed node: Python3
 
 ==> Intermediate Level
 	1. What are Ansible facts and how are they collected ?
