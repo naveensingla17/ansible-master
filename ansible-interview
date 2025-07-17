@@ -50,7 +50,14 @@
 		c. Perfect description of application
 		d. Support dynamic inventories.
 		e. Easy to manage with version controls.
-	17. 
+	17. Use Case
+	Ans: 
+		i) Configuration Management
+		ii) Application Deployment
+		iii) Provisioning 
+		iv) Continues Delivery
+
+	18. 
 
 ==> Intermediate Level
 	1. What are Ansible facts and how are they collected ?
