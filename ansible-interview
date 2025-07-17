@@ -43,6 +43,15 @@
 	15. What is the difference between ansible navigator and ansible core ?
 	Ans: Ansible Core is the foundational, open-source automation engine, while Ansible Navigator is a tool built on top of it.
 
+	16. Strength of Ansible ?
+	Ans:
+		a. Cross platform support - unix, windows, linux.
+		b. Human readable automation
+		c. Perfect description of application
+		d. Support dynamic inventories.
+		e. Easy to manage with version controls.
+	17. 
+
 ==> Intermediate Level
 	1. What are Ansible facts and how are they collected ?
 	
