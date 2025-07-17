@@ -62,6 +62,12 @@
 	Master node: Unix or Linux + Python3
 	Managed node: Python3
 
+	19. Difference in static and dynamic inventory file
+	Ans: Static is fixed file
+		Dynamic is file being updated by some source like terraform
+	
+	20. 
+
 ==> Intermediate Level
 	1. What are Ansible facts and how are they collected ?
 	
