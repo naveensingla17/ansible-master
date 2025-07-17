@@ -30,7 +30,9 @@
 	     Green - No change
 	     Red - Error
 
-	12. Is ansible idempotent and why it is important ?
+	12. Is ansible idempotent and why it is important ? Difference in bash and Ansible ?
+	Ans: Idempotent is running same task multiple time and if already installed, it will not re-install.
+	     Bash is not idempotent, whereas Ansible is.
 
 	13. How can you check if a playbook is idempotent?
 	Ans: run script and check if anything changed or not.
