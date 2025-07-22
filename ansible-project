@@ -29,3 +29,12 @@ become_user = root
 become_ask_pass = False
 
 Step 3: Run / practice below commands
+
+ansible --list-hosts dev
+ansible --list-hosts stage
+ansible --list-hosts all
+ansible --list-hosts myserver
+
+Note: all commands should be inside the project where inventory and ansible.cfg file exists else give inventory file path as shown below
+
+ansible --list-hosts myserver -i /root/ansible-project/inventory
