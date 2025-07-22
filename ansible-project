@@ -44,6 +44,31 @@ inventory = ./inventory
 
 do the following:
 go to file --> /root/.bashrc --> add below line
-ANSIBLE_CONFIG=/root/ansible-project/ansible.cfg
+export  ANSIBLE_CONFIG=/root/ansible-project/ansible.cfg
 run below command to compile bash profile
 source /root/bashrc
+
+==> adhoc commands syntac
+  1. How do you validate inventory file ?
+    ansible-inventory -i inventory.ini --list
+
+  2 . How do you validate host connection ?
+    ansible -m ping all  
+    ansible -m ping dev
+    ansible -m ping stage  
+	  ansible myhosts -m ping -i inventory.ini
+
+  3. How to execude command on remote end clients ?
+    Pre-requisite: make sure ansible user is allowed sudo permissions
+    ansible -m command -a "uptime" dev
+    ansible -m command -a "uptime" stage
+    ansible -m command -a "ls -l /" all
+
+    ansible -m shell -a "tail -5 /etc/passwd" dev
+    ansible -m shell -a "id ansible" dev
+    ansible -m shell -a "df -hT" all
+
+    ansible -m user -a "name=demo1 state=present" dev  ### command to create user
+    ansible -m user -a "name=demo1 state=absent" dev  ### to disable user
+
+  4. 
