@@ -85,6 +85,9 @@
 	
 	8. How do you use when conditionals in Ansible?
 
+	9. Can you display group in inventory file using ansible command?
+	Ans: No, to see groups in inventory file you need to open the inventory file.
+
 ==> Intermediate Level
 	1. Explain Ansible Vault. How do you use it?
 	
