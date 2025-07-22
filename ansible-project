@@ -16,7 +16,7 @@ dev
 stage
 
 Step 2: Create below ansible.cfg file
-defaults]
+[defaults]
 inventory = ./inventory
 remote_user = ansible      
 ask_pas = False
@@ -38,3 +38,12 @@ ansible --list-hosts myserver
 Note: all commands should be inside the project where inventory and ansible.cfg file exists else give inventory file path as shown below
 
 ansible --list-hosts myserver -i /root/ansible-project/inventory
+
+==> in order to avoid writing below line in ansible..cfg file
+inventory = ./inventory
+
+do the following:
+go to file --> /root/.bashrc --> add below line
+ANSIBLE_CONFIG=/root/ansible-project/ansible.cfg
+run below command to compile bash profile
+source /root/bashrc
