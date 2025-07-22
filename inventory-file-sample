@@ -1,0 +1,17 @@
+######## static inventory file
+# Without group
+172.31.23.131
+172.31.29.18
+
+# To create group
+[dev]
+172.31.23.131
+172.31.14.{1..100} # to add series of ip 
+
+[stage]
+172.31.29.18
+
+# group oif group [here myserver will point to dev and stage]
+[myserver:children]
+dev
+stage
