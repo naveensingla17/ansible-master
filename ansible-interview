@@ -66,7 +66,9 @@
 	Ans: Static is fixed file
 		Dynamic is file being updated by some source like terraform
 	
-	20. 
+	20. How to check ansible help ?
+	Ans: ansible-doc user
+		ansible-doc group
 
 ==> Intermediate Level
 	1. What are Ansible facts and how are they collected ?
