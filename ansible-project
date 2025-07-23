@@ -71,4 +71,28 @@ source /root/bashrc
     ansible -m user -a "name=demo1 state=present" dev  ### command to create user
     ansible -m user -a "name=demo1 state=absent" dev  ### to disable user
 
-  4. 
+  4. Show ansible graph ?
+     Ans:
+[root@master ansible-project]# ansible-inventory --graph
+@all:
+  |--@ungrouped:
+  |--@myserver:
+  |  |--@dev:
+  |  |  |--172.31.23.131
+  |  |--@stage:
+  |  |  |--172.31.29.18
+[root@master ansible-project]# cat inventory 
+172.31.23.131
+172.31.29.18
+
+[dev]
+172.31.23.131
+
+[stage]
+172.31.29.18
+
+[myserver:children]
+dev
+stage
+
+
